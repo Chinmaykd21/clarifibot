@@ -3,7 +3,7 @@ import { getAllJobDefinitions } from "../functions/get_jobs/definitions.ts";
 
 const getAllJobsWorkflow = DefineWorkflow({
   callback_id: "get_all_jobs_workflow",
-  title: "All Jobs",
+  title: "AllJobs",
   description: "Get all jobs associated with your account in clarifi",
   input_parameters: {
     properties: {
@@ -22,7 +22,7 @@ const getAllJobsWorkflow = DefineWorkflow({
 const emailIDInputForm = getAllJobsWorkflow.addStep(
   Schema.slack.functions.OpenForm,
   {
-    title: "Enter your email registered on clairfi",
+    title: "Enter email",
     interactivity: getAllJobsWorkflow.inputs.interactivity,
     submit_label: "Submit",
     description: "Get all jobs for registered email account",

@@ -1,7 +1,7 @@
 import { DefineFunction, DefineType, Schema } from "deno-slack-sdk/mod.ts";
 
 export const allJobsOutputTypes = DefineType({
-  name: "All Jobs",
+  name: "AllJobs",
   type: Schema.types.object,
   properties: {
     jobName: {
